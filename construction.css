@@ -1,0 +1,18 @@
+/* Message */
+
+  body {
+  	text-align: center; 
+  }
+
+  h1 {
+  	color: white;
+  }
+
+  article {
+  	display: flex;
+  	flex: 1;
+  	display: block;
+  	margin: auto;
+  	background-color: black;
+    padding: 10em 5em;
+  }

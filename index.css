@@ -1,0 +1,167 @@
+/* Content Container For Everything */
+
+.content {
+  margin: 2em;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  background-color: black;
+}
+
+/* Big Articles */
+
+.big_articles_container {
+  margin: 2em;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  background-color: black;
+}
+
+.big_article > img {
+    width: 25em;
+    height: 20em;
+}
+
+.big_articles_container a:link, .big_articles_container a:visited { 
+    color: white;
+    text-decoration: none;
+    justify-content: flex-start;
+}
+
+.big_articles_container a:hover, .big_articles_container a:focus {
+    color: lightgrey;
+    text-decoration: none;
+    justify-content: flex-start;
+}
+
+/* Container For "Medium Articles Containers", "Advertisment", "Small Articles Container"*/
+
+.mac_adv_sac {
+  display: flex;
+  flex-direction: row;
+  background-color: black;
+  margin: 2em;
+  flex-wrap: wrap;
+}
+
+/* Medium Articles */
+
+.medium_articles_container {
+  display: flex;
+  flex: 4;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  margin: 2em;
+}
+
+.medium_articles > img {
+    width: 13em;
+    height: 8em;
+}
+
+.medium_articles_container a:link, .medium_articles_container a:visited { 
+    color: white;
+    text-decoration: none;
+}
+
+.medium_articles_container a:hover, .medium_articles_container a:focus {
+    color: lightgrey;
+    text-decoration: none;
+}
+
+/* Advertisment */
+
+.advertisment {
+  flex: 1;
+}
+
+.advertisment > a img {
+  width: auto;
+  height: auto;
+}
+
+/* Small Articles */
+
+.small_articles_container {
+  display: flex;
+  flex: 1;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  margin: 2em;
+}
+
+.small_articles_container h4 {
+  padding: 1em;
+  background-color: #990000;
+}
+
+.small_articles_container a:link, .small_articles_container a:visited { 
+    color: white;
+    text-decoration: none;
+}
+
+.small_articles_container a:hover, .small_articles_container a:focus {
+    color: lightgrey;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 900px) {         /*Tablet Portrait*/
+
+/* Content Container For Everything */
+
+.content {
+  width: 100%;
+}
+
+/* Big Articles */
+
+.big_articles_container {
+  flex: 1;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  margin: auto;
+  margin-top: 2em;
+}
+
+/* Container For "Medium Articles Containers", "Advertisment", "Small Articles Container"*/
+
+.mac_adv_sac {
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+/* Medium Articles */
+
+.medium_articles_container {
+  flex-direction: row;
+  margin: auto;
+}
+
+/* Advertisment */
+
+.advertisment {
+  flex: 1;
+  margin: auto;
+}
+
+/* Small Articles */
+
+.small_articles_container {
+  margin: auto;
+  }
+}
+
+@media only screen and (max-width: 479px) {         /*Mobile Phone Portrait*/
+
+/* Big Articles */
+
+.big_article > img {
+    width: 100%;
+    height: auto;
+}
+}

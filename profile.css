@@ -1,0 +1,70 @@
+/* Sign In Form */
+
+label, input { 
+    display: block;
+}
+
+label {
+    color: white;
+}
+
+input {
+    margin-bottom: 2em;
+    padding: .5em;
+    width: 100%;
+}
+
+div #pwdWrap {
+    display: flex; 
+    align-items: center; 
+    border-radius: 6px;
+}
+
+input#password {
+    margin-bottom: 2em; 
+    border: none;
+}
+
+#Sign_In {
+    width: 90%;
+    max-width: 50em;
+    margin: 0 auto 3em;
+    border-radius: 1em;
+    border: solid black;
+  }
+
+#Sign_In header {
+    background-color: black;
+    border-radius: 10px 10px 0 0;
+    color: white;
+    padding: .5em 1em;
+    text-align: center;
+}
+
+#Sign_In article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 12.5px;
+    padding: 5px 2px;
+    text-align: center;
+}
+
+#Container {
+    background-color: rgba(0, 0 ,0 ,.5);
+}
+
+#Log_In_Button {
+    background-color: black;
+    margin-bottom: 1em;
+}
+
+button {
+    padding: 1em;
+    margin: 2em;
+    width: 10em;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+}

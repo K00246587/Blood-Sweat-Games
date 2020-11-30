@@ -1,0 +1,78 @@
+/* Form */
+
+fieldset {
+	max-width: 50%;
+	margin: auto;
+	margin-top: 5.5em;
+	margin-bottom: 6em;
+	background-color: black;
+	text-align: center;
+}
+
+fieldset h1 {
+	text-align: center;
+	color: white;
+}
+
+fieldset ul {
+	list-style: none;
+}
+
+label {
+	width: 50%;
+	text-align: right;
+	float: left;
+	color: white;
+}
+
+::placeholder {
+	color: white;
+}
+
+input, select {
+	width: 30%;
+	background-color: grey;
+	color: white;
+}
+
+textarea {
+	width: 30%;
+	background-color: grey;
+	color: white;
+}
+
+label, input, select{
+	margin: 1em;
+}
+
+.buttons {
+	align-content: center;
+}
+
+#submit, #cancel{
+	width: 5em;
+	margin-left: 5em;
+	color: white;
+}
+
+@media only screen and (max-width: 900px) {         /*Tablet Portrait*/
+
+/* Form */
+
+fieldset {
+	max-width: 60%;
+}
+}
+
+@media only screen and (max-width: 479px) {         /*Mobile Phone Portrait*/
+
+/* Form */
+
+fieldset {
+	max-width: 100%;
+	width: 100%;
+	margin: 0;
+	margin-top: 5.5em;
+	margin-bottom: 6em;
+}
+}

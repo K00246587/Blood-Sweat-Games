@@ -1,0 +1,140 @@
+html, body {
+  background-color: #990000;
+  margin: 0em;
+}
+
+/* Navigation Bar */
+
+.navbar {
+  display: flex;
+}
+
+.navbar > li {
+  flex: 1;
+  text-align: center;
+  font-size: 2em;
+  color: white;
+  box-sizing: border-box;
+  background-color: #990000;
+  list-style-type: none;
+}
+
+.navbar > img {
+  width: 50px;
+  height: 50px;
+}
+
+.navbar > .titlenav {
+  flex: 1;
+  font-family: Comic Sans MS, cursive, sans-serif;
+  font-size: 1.3em;
+}
+
+.navbar > .current {
+  background-color: black;
+}
+
+.navbar a:link, .navbar a:visited { 
+    color: white;
+    text-decoration: none;
+}
+
+.navbar a:hover, .navbar a:focus {
+    color: black;
+    text-decoration: none;
+}
+
+/* Footer */
+
+footer { 
+  clear: both;
+  padding: 2em;
+  background-color: black;
+} 
+
+footer h3, p {
+  text-align: center;
+  color: white;    
+}
+
+.footer_container {
+  display: flex;
+  flex-direction: row;
+}
+
+.footer_row {
+  flex: 1;
+}
+
+.footer_container a p:link, .footer_container a p:visited { 
+    color: white;
+    text-decoration: none;
+}
+
+.footer_container a p:hover, .footer_container a p:focus {
+    color: lightgrey;
+    text-decoration: none;
+}
+
+/* Java Script */
+
+/* Clock */
+
+.footer_row #clock {
+  color: white;
+  margin-left: 6em;
+}
+
+@media only screen and (max-width: 900px) {         /*Tablet Portrait*/
+
+/* Navigation Bar */
+
+.navbar {
+  border: none;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: auto;
+}
+
+.navbar > li {
+  flex: 1;
+  text-align: center;
+  font-size: 2em;
+  color: white;
+  box-sizing: border-box;
+  background-color: #990000;
+  list-style-type: none;
+}
+
+.navbar > img {
+  width: 50px;
+  height: 50px;
+  margin: auto;
+}
+
+.navbar > .titlenav {
+  flex: 1;
+  font-family: Comic Sans MS, cursive, sans-serif;
+  font-size: 1.3em;
+}
+
+/* Footer */
+
+footer { 
+  width: 100%
+}
+
+.footer_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.footer_row #clock {
+  color: white;
+  align-content: center;
+}
+}
